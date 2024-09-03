@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu-item {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.menu-item:hover {
+    background-color: #e0e0e0;
+}
+
+.search-bar {
+    margin-left: auto;
+    position: relative;
+}
+
+.search-input {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+.profile-menu {
+    margin-left: 1rem;
+    position: relative;
+}
+
+.profile-button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5rem;
+    display: none;
+}
+
+.profile-button:hover + .profile-dropdown,
+.profile-dropdown:hover {
+    display: block;
+}
+
+.profile-label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.profile-divider {
+    height: 1px;
+    background-color: #ddd;
+    margin: 0.5rem 0;
+}
+
+.profile-item {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 0;
+}
+
+.profile-item:hover {
+    background-color: #e0e0e0;
+}
+
+.main {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    grid-template-columns: 2fr 1fr;
+}
+
+.learning-path,
+.recommended-courses,
+.goals {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.progress-item,
+.course-item,
+.goal-item,
+.progress-overview-item {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: #007bff;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.course-icon,
+.progress-overview-item .progress-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.course-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #007bff;
+    color: #007bff;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.course-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.progress-overview {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.progress-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+}

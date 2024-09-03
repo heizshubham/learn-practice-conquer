@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(147, 161, 189);
+    background: linear-gradient(90deg, rgba(147, 161, 189, 1) 2%, rgba(243, 243, 244, 1) 40%, rgba(210, 223, 246, 1) 91%);
+    font-family: Arial, sans-serif;
+}
+
+.heading {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    margin: 20px 0; /* Add some margin to the top */
+    color: #333;
+    background-image: linear-gradient(45deg, #ff6f61, #ff8e53, #ffc107);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center; /* Center the heading */
+}
+
+.container {
+    text-align: center;
+    margin-top: 40px; /* Adds space between the heading and buttons */
+}
+
+.btn {
+    display: inline-block;
+    margin: 30px; /* Increased gap */
+    padding: 40px 80px; /* Larger buttons */
+    font-size: 32px; /* Increased font size */
+    color: white;
+    background-image: linear-gradient(45deg, #ff6f61, #ff8e53, #ffc107);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background-position 0.5s;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
+    background-size: 200% 200%;
+    background-position: 0 0;
+}
+
+.btn:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.4);
+    background-position: 100% 100%;
+}
+
+#teacherBtn {
+    background-image: linear-gradient(45deg, #28a745, #66bb6a, #8bc34a);
+}
+
+#studentBtn {
+    background-image: linear-gradient(45deg, #17a2b8, #42a5f5, #64b5f6);
+}
